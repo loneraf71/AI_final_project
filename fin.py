@@ -126,7 +126,7 @@ def main():
         """Showing documents"""
         with st.expander("📁 Saved Documents"):
             display_documents()
-        query_text = st.chat_input("Enter your question here...")
+        query_text = st.text_input("Enter your question here...")
 
         if st.button("Submit Document Query"):
             if collection.count()>0 and query_text:
